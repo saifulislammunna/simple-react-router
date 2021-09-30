@@ -6,6 +6,7 @@ import About from './components/About/About';
 import NotFound from './components/NotFound/NotFound';
 import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
 import Header from './components/Header/Header';
+import FrienDetail from './components/FriendDetail/FrienDetail';
  
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
             <Route path="/friends">
               <Friends></Friends>
 
+            </Route>
+            <Route path="/friend/:friendId">
+              <FrienDetail></FrienDetail>
             </Route>
             <Route path="/about">
               <About></About>
